@@ -26,6 +26,7 @@ input{
     border: 2px solid #ededed;
     color: #1b1b1b;
     outline: none;
+    font-size: 16px;
 }
 
 .titulo{
