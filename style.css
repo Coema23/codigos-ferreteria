@@ -1,19 +1,26 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif; 
     background: linear-gradient(to right, #000428, #004e92);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
     padding: 50px 55px 85px 55px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.45);
     border-radius: 20px;
     text-align: center;
     width: 340px;
     background-color: aliceblue;
+
+    margin:3%;
+    
 }
 
 input{
@@ -59,4 +66,19 @@ button{
     margin-top: 15px;
     font-size: 25px;
 
+}
+
+.container-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+
+.container-img img{
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    
 }
