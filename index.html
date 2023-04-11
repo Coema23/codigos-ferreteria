@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conversor de Ferretería</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+</head>
+<body>
+	<div class="container">
+				
+		<h1 class="titulo">CONVERSOR DE CÓDIGOS DE FERRETERIA</h1>
+	
+		<p class="parrafo">Escribe en la casilla el codigo, luego haz click en el botón de "convertir"</p>
+		<input type="text" id="letras" placeholder="Escribir código aqui" pattern="[KARD-OESCILkard-oescil]+" onkeyup="this.value = this.value.toUpperCase();" onkeypress="return /[KARDOSCEIL]/i.test(event.key) && !/\d/.test(event.key)">
+    	<button onclick="convertir()">CONVERTIR</button>
+		
+		<div id="numeros"></div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
